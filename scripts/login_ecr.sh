@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGION=ap-south-1
+REGION=ap-south-1 
 ACCOUNT_ID=123456789012
 REPO_NAME=my-app-repo
 
