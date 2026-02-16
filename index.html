@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="section1">
+        <div class="d-flex justify-content-around align-items-center">
+            <img class="img-1"
+             src="data:image/png;base64,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" width="150px"
+              alt="">
+            <h1 class="heading-1"> Tripadvisor</h1>
+            <h5>Discover</h5>
+            <h5>Trips</h5>
+            <h5>Review</h5>
+            <h5>Forums</h5>
+            <button class="rtn-1">Sign in</button>
+            <img class="img-2" src="data:image/png;base64,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" width="50px" alt="">
+        </div>
+        <hr>
+          <strong class="d-flex justify-content-center align-items-center strng-1">Where to ?</strong>
+
+          <div class="d-flex justify-content-center align-items-center parent-1">
+              <h4 class="heading-2">Search All</h4>
+              <h4 class="heading-3">hotel </h4>
+              <h4 class="heading-4">Things to Do</h4>
+              <h4 class="heading-5">Restaurants</h4>
+              <h4 class="heading-6">Flights</h4>
+              <h4>HolidayHome</h4>
+         </div>
+           
+         <div class="d-flex justify-content-center align-items-center parent-2">
+            <form>
+                <label for=""> search :</label>
+                <input class="input-1" type="text"> <br>
+            </form>
+         </div>
+
+         <div class="d-flex justify-content-center align-items-center parent-3">
+            <img src="https://img.freepik.com/premium-psd/traveling-social-media-banner-template-design_625692-400.jpg?ga=GA1.1.1819692776.1742448394&semt=ais_hybrid" width="1000px" height="450px" alt="">
+         </div>
+          
+         <div class="parent-4">
+            <h4>Explore the karnataka's most stunning cities.</h4>
+         </div>
+
+         <div class="d-flex justify-content-center align-items-center rakshath-1">
+          <div class="box">
+            <img src="https://img.freepik.com/premium-photo/low-angle-view-historical-building-against-sky_1048944-14083251.jpg?w=1380" width="400px" alt="" onclick="display('section2')" >
+            <p>banglore</p>
+         </div>
+
+         <div class="box">
+            <img class="rakshath-2" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/dd/9e/chamundeswari-temple.jpg?w=1200&h=800&s=1" width="400px" alt="" onclick="display('section3')">
+            <p>mysore</p>
+         </div>
+
+         <div class="box">
+            <img src="https://img.freepik.com/free-photo/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand_335224-761.jpg?ga=GA1.1.1819692776.1742448394&semt=ais_hybrid" width="400px" alt="" onclick="display('section4')">
+            <p>ooty</p>
+         </div>
+        </div>
+    </div>
+
+    <div id="section2">
+        <h3> Banglore most famous places :</h3>
+        <div class="d-flex justify-content-center align-items-center" onclick="display('section wildlife')">
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/ef/77/c6/caption.jpg?w=1000&h=-1&s=1" width="400px" alt="">
+            </div>
+            <div class="parent-4">
+                <h4>Wildlife jeep safari Tour at Bannergatta with private Tranfer</h4>
+                <h6>Day Trips</h6>
+                <h6>3-6 hours</h6>
+                <h6>from  <strong>$6,501 per adult</strong></h6>
+                <button class="rtn-2">Reserve</button>
+            </div>
+           </div>
+
+            <div class="d-flex justify-content-center align-items-center parent-5">
+                <div>
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/06/63/b8/caption.jpg?w=800&h=600&s=1" width="410px" alt="">
+                </div>
+                <div class="child-1">
+                    <h4> Malleswaram heritage walk, an immersive walking tour in Bangalore</h4>
+                    <h6>Half day tours</h6>
+                    <h6>4 Hours</h6>
+                    <h6>from <strong>$4,822 per adult</strong></h6>
+                    <button class="rtn-3">Reserve</button>
+                </div>
+            </div>  
+
+            <div class="d-flex justify-content-center align-items-center parent-6">
+                <div>
+                    <img class="img-3" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/df/9c/81/caption.jpg?w=800&h=600&s=1" width="400px" alt="">
+                </div>
+                <div class="child-2">
+                    <h4>Half-Day Private British Heritage Tour with Lunch.</h4>
+                    <h6>Half day tours</h6>
+                    <h6>4 Hours</h6>
+                    <h6>from <strong>$7,891 per adult</strong></h6>
+                    <button class="rtn-3">Reserve</button> 
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center child-3">
+          <button class=" rtn-4" onclick="display('section1')">
+            prev-page
+        </button>
+    </div>
+    </div>
+
+    <div id="section3">
+        <h3> Mysore most famous places :</h3>
+        <div class="d-flex justify-content-center align-items-center" onclick="display('section venugopala')">
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0c/d2/73/venugopala-swamy-temple.jpg?w=1200&h=800&s=1" width="400px" alt="">
+            </div>
+            <div class="parent-4">
+                <h4>venugopala swamy</h4>
+                <h6>Day Trips</h6>
+                <h6>3-6 hours</h6>
+                <h6>from  <strong>$6,501 per adult</strong></h6>
+                <button class="rtn-2">Reserve</button>
+            </div>
+           </div>
+
+            <div class="d-flex justify-content-center align-items-center parent-5">
+                <div>
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/dd/9e/chamundeswari-temple.jpg?w=1200&h=800&s=1" width="410px" alt="">
+                </div>
+                <div class="child-1">
+                    <h4> chamundeswari-temple</h4>
+                    <h6>Half day tours</h6>
+                    <h6>4 Hours</h6>
+                    <h6>from <strong>$4,822 per adult</strong></h6>
+                    <button class="rtn-3">Reserve</button>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center parent-6">
+                <div>
+                    <img class="img-4" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/40/63/77/the-palace-after-the.jpg?w=1100&h=-1&s=1" width="400px" alt="">
+                </div>
+                <div class="child-3">
+                    <h4>Mysore palace</h4>
+                    <h6>Half day tours</h6>
+                    <h6>4 Hours</h6>
+                    <h6>from <strong>$7,891 per adult</strong></h6>
+                    <button class="rtn-3">Reserve</button> 
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center child-3">
+          <button class=" rtn-4" onclick="display('section2')">
+           prev-page
+        </button>
+        <button class=" rtn-4" onclick="display('section1')">
+            Home
+        </button>
+        <button class=" rtn-4" onclick="display('section4')">
+            Next-page
+        </button>
+    </div>
+    </div>
+
+    <div id="section4">
+        <h3> Ooty most famous places :</h3>
+        <div class="d-flex justify-content-center align-items-center">
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/9b/41/39/fb-img-1536802621189.jpg?w=1000&h=700&s=1" width="410px" alt="">
+            </div>
+            <div class="parent-4">
+                <h4>Pykara Falls</h4>
+                <h6>Day Trips</h6>
+                <h6>3-6 hours</h6>
+                <h6>from  <strong>$6,501 per adult</strong></h6>
+                <button class="rtn-2">Reserve</button>
+            </div>
+           </div>
+
+            <div class="d-flex justify-content-center align-items-center parent-5">
+                <div>
+                    <img class="rakshath-3" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/3d/3d/ce/doddabetta-peak.jpg?w=1100&h=-1&s=1" width="400px" height="220px" alt="">
+                </div>
+                <div class="heading-7">
+                    <h4 class=>Doddabetta Peak</h4>
+                    <h6>Half day tours</h6>
+                    <h6>8 Hours</h6>
+                    <h6>from <strong>$4,822 per adult</strong></h6>
+                    <button class="rtn-3">Reserve</button>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center parent-6">
+                <div>
+                    <img class="rakshath-4" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/e9/6b/d3/another-wonderful-stone.jpg?w=1200&h=800&s=1" width="400px" height="220px" alt="">
+                </div>
+                <div class="child-3">
+                    <h4> mountain Railway</h4>
+                    <h6>Half day tours</h6>
+                    <h6>4 Hours</h6>
+                    <h6>from <strong>$7,891 per adult</strong></h6>
+                    <button class="rtn-3">Reserve</button> 
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center child-3">
+          <button class=" rtn-4" onclick="display('section3')">
+            prev-page
+        </button>
+    </div>
+    </div>
+
+    <div id="section wildlife">
+        <div>
+            <h1>Wild Life Jeep Safari Tour at Bannerghatta with Private Transfer</h1>
+            <h6>--- 5.0   6 reviews</h6>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="pic-1" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/bc/e7/07/caption.jpg?w=1400&h=-1&s=1" width="700px" alt="">
+         </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="para-1">About : Escape the city bustle for the thrill of the wild! Our safari tour offers a fantastic opportunity to connect with nature and see incredible animals up close.
+                 Imagine the excitement of spotting lions, elephants, or other incredible wildlife in their natural environment – a memory your family and friends will cherish forever.
+                  The park is approximately a 60-90 minute drive from the city (allowing for potential traffic delays). We prioritize your comfort and will provide a well-maintained sedan or SUV, depending on the size of your group, for the journey to the park.
+                   We’ll handle all of the logistics, including a comfortable return trip after the animal safari to your starting point, so you can simply enjoy the adventure.
+            </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center parent-7">
+            
+        <button class=" rtn-5" onclick="display('section1')">
+            Home
+        </button>
+        </div>
+    </div>
+    </div>
+
+    <div id="section venugopala">
+        <div class="roy-1">
+            <h1>venugopala-swamy-temple</h1>
+            <h6>---5.0  10 reviews</h6>
+        </div>
+        <div class="parent-8">
+            <div class="d-flex justify-content-center align-items-center ">
+            <img class="roy-2" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/07/19/a1/venugopalaswamy-temple.jpg?w=1100&h=-1&s=1" width="700px" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+            <p class="para-2">History : The Venugopala Swamy Temple located at Hosa Kannambadi, near Krishna Raja Sagara, is an example of Hoysala architecture in Karnataka, India. 
+                This temple was built in the 12th century AD around
+                 the same time as the Chennakesava Temple at Somanathapura, Mysore district.
+                 The Venugopala Swamy Temple, dedicated to a form of the Hindu god Vishnu, is located in Devanahalli Fort, a town in the Bangalore Rural district of Karnataka, India. 
+                 It is a protected monument and showcases Dravidian-style architecture, with the temple being a part of the post-Vijayanagara empire</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+           
+        <button class="rtn-5" onclick="display('section1')">
+            Home
+        </button>
+    </div>
+    </div>
+
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

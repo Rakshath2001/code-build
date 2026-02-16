@@ -1,0 +1,216 @@
+
+hr{
+    border-top: 4px solid black;
+    height: 1px;
+}
+
+.img-1{
+    margin-left: 60px;
+    border-radius: 250px;
+}
+
+.heading-1{
+    margin-right: 80px;
+    text-decoration: underline;
+}
+
+.rtn-1{
+    border-radius: 22px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.img-2{
+    margin-left: 40px;
+}
+
+.strng-1{
+    font-size: 40px;
+}
+
+.parent-1{
+   margin-top: 50px;
+}
+
+.heading-2{
+    margin-right: 70px;
+}
+.heading-3{
+    margin-right: 70px;
+}
+.heading-4{
+    margin-right: 70px;
+}
+.heading-5{
+    margin-right: 70px;
+}
+.heading-6{
+    margin-right: 60px;
+}
+
+.parent-2{
+    margin-top: 30px;   
+}
+
+.input-1{
+    padding-left: 42px;
+    padding-right: 42px;
+    border-radius: 16px;
+}
+
+.parent-3{
+    margin-top: 46px;
+}
+
+.rakshath-1{
+    margin-bottom: 50px;
+}
+
+.rakshath-2{
+    margin-left: 36px;
+    margin-right: 36px;
+}
+.parent-4{
+    margin-top: 45px;
+    margin-left: 80px;
+}
+
+.parent-4{
+    margin-left: 22px;
+}
+
+.rtn-2{
+    background-color:  rgb(253, 174, 26);
+    border-radius: 12px;
+    border: none;
+    padding: 6px;
+}
+
+.parent-5{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.child-1{
+    margin-left: 26px;
+}
+.rtn-3{
+    background-color:  rgb(253, 174, 26);
+    border-radius: 12px;
+    border: none;
+    padding: 6px;  
+}
+
+.parent-6{
+    margin-top: 40px;
+}
+
+.img-3{
+    margin-right: 40px;
+}
+
+.child-2{
+    margin-right: 90px;
+}
+
+.rtn-4{
+    background-color: rgb(16, 16, 218);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 8px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.child-3{
+    margin-top: 60px;
+}
+
+.img-4{
+    margin-right: 0px;
+}
+
+.child-3{
+    margin-left: 20px;
+}
+
+.rakshath-3{
+    margin-left: -40px;
+}
+
+.heading-7{
+    margin-left: 20px;
+}
+
+.rakshath-4{
+    margin-left: 50px;
+}
+
+.para-1{
+    width: 700px;
+    margin-top: 20px;
+}
+
+.rakshath-5{
+    margin-left: 20px;
+}
+
+.pic-1{
+    border-radius: 30px;
+}
+
+.rtn-5{
+    background-color: red;
+    color: white;
+    border: none;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 18px;
+}
+
+.parent-7{
+    margin-top: 40px;
+}
+
+.para-2{
+    width: 900px;
+    margin-top: 20px;
+}
+
+
+
+.parent-8{
+    margin-left: 30px;
+}
+
+
+.box{
+    position: relative;
+}
+
+.box p{
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.268);
+    width: 80%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.roy-1{
+    margin-left: 240px;
+}
+
+.roy-2{
+    border-radius: 40px;
+}
+

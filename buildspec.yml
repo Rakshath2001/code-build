@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "prebuild phase"
+      - ls -l
+      - pwd
+
+  build:
+    commands:
+      - docker --version
+
+  post_build:
+    commands:
+      - echo "postbuild phase"
