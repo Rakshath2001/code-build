@@ -1,11 +1,6 @@
 #!/bin/bash
 
-REGION=ap-south-1 
-ACCOUNT_ID=123456789012
-REPO_NAME=my-app-repo
 
 echo "Logging in to ECR...."
 
-aws ecr get-login-password --region $REGION \
-| docker login --username AWS \
---password-stdin $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 738337656914.dkr.ecr.us-east-1.amazonaws.com
